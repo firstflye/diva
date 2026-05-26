@@ -32,7 +32,7 @@ STATE_PAUSED = "PAUSED"
 STATE_GAME_OVER = "GAME_OVER"
 
 # Asset Paths
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # This might need adjustment depending on where settings.py is
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ASSETS_DIR = os.path.join(BASE_DIR, "assets")
 IMAGES_DIR = os.path.join(ASSETS_DIR, "images")
 AUDIO_DIR = os.path.join(ASSETS_DIR, "audio")
