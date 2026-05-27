@@ -1,17 +1,18 @@
 import pygame
 from src.states.base_state import BaseState
+from src.states.playing import PlayingState
 from settings import SCREEN_WIDTH, SCREEN_HEIGHT, WHITE
 
 class MenuState(BaseState):
     def __init__(self, game):
         super().__init__(game)
-        self.font_big   = pygame.font.SysFont(None, 80)
-        self.font_small = pygame.font.SysFont(None, 36)
+        self.font_big   = pygame.font.Font(None, 80)
+        self.font_small = pygame.font.Font(None, 36)
 
     def handle_event(self, event):
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RETURN:
-                pass  # will switch to playing state in Phase 2
+                self.game.switch_state(PlayingState(self.game))
 
     def update(self, dt):
         pass

@@ -8,7 +8,7 @@ SCREEN_HEIGHT = 720
 FPS = 60
 
 # Tile settings
-TILE_SIZE = 64
+TILE_SIZE = 32
 
 # Colors
 WHITE = (255, 255, 255)
